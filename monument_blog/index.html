@@ -13,10 +13,10 @@
 
 <body>
 	<nav>
-		<a href="#" class="hvr-grow">About</a>
-		<a href="#" class="hvr-grow">Gallery</a>
-		<a href="#" class="hvr-grow">Blog</a>
-		<a href="#" class="hvr-grow">Contact</a>
+		<a href="#" class="hvr-grow" title="Information about our blog writers!">About</a>
+		<a href="#" class="hvr-grow" title="Pictures from our blog!">Gallery</a>
+		<a href="#" class="hvr-grow" title="Blog entries list!">Blog</a>
+		<a href="#" class="hvr-grow" title="Give us your email to keep in touch!">Contact</a>
 	</nav>
 	<header>
 		<h1><a href="#" class="hvr-grow">Monument</a></h1>
@@ -68,13 +68,24 @@
 		</div>
 		<br>
 		<div id="keepintouch">
-			<input type="email" name="emailcontact" value="EMAIL ADDRESS">
-			<button>KEEP IN TOUCH</button>
+			<div id="address">
+				<!-- looks good but really stores nothing yet! -->
+				<input type="email" pattern="[^ @]*@[^ @]*" name="emailcontact" placeholder="EMAIL ADDRESS" autocomplete="on">
+			</div>
+			<div id="keep">
+				<!-- sends alert usinf jscript function and also has tooltip...of course it does nothing yet! -->
+				<button onclick="myFunction()" title="Click here to submit!">KEEP IN TOUCH</button>
+			</div>
 		</div>
 		<hr>
 		<p>&copy;2016<a href="">Sarah Holden</a></p>
 	</footer>
 
+	<script>
+		function myFunction() {
+			alert("Email has been sent to your mailbox!");
+		}
+	</script>
 </body>
 
 </html>

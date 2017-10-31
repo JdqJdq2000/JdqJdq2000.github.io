@@ -6,57 +6,58 @@ https: //fonts.google.com/?query=raleway&selection.family=Lato%7CRaleway:400,600
 Base Styles
 ------------------------------------------- */
 
-/* Note: Makes sure that padding and the border are included in the width for each element. */
-
-/* Don't add anything else under the * selector! */
-
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+  opacity: 1.0;
+}
+
+img:hover {
+  opacity: 0.5;
 }
 
 nav {
-	position: fixed;
-	max-width: 100%;
-	background-color: white;
-	width: 960px;
-	height: 40px;
-	margin-top: -40px;
-	}
-nav a {
-	font-size: 16px;
-	margin: 10px 40px;
+  position: fixed;
+  max-width: 100%;
+  background-color: white;
+  width: 960px;
+  height: 40px;
+  margin-top: -40px;
+}
 
+nav a {
+  font-size: 16px;
+  margin: 10px 40px;
 }
+
 html, body {
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 a {
-	color: #7B98AA;
-	/*color: green;*/
-	display: inline-block;
-	text-decoration: none;
-	font-weight: 600;
+  color: #7B98AA;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 body {
-	padding-top: 40px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
-	color: #44545E;
-	/*color: red;*/
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0px auto;
-	max-width: 960px;
-	font-weight: 600;
+  padding-top: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #44545E;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px auto;
+  max-width: 960px;
+  font-weight: 600;
 }
 
 /* ----------------------------------------
@@ -64,80 +65,75 @@ Typography
 ------------------------------------------- */
 
 h1 {
-	font-size: 37px;
-	letter-spacing: 5px;
-	font-weight: 600;
+  font-size: 37px;
+  letter-spacing: 5px;
+  font-weight: 600;
 }
 
 h2 {
-	font-size: 23px;
-	font-weight: 600;
+  font-size: 23px;
+  font-weight: 600;
 }
 
 h3 {
-	font-size: 18px;
-	font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 p {
-	font-family: "Lato", sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 article a {
-	font-size: 13px;
-	border-style: solid;
-	padding: 4px 15px;
-	border-width: 2px;
-	margin-bottom: 80px;
+  font-size: 13px;
+  border-style: solid;
+  padding: 4px 15px;
+  border-width: 2px;
+  margin-bottom: 80px;
 }
 
 #aboutmagazine {
-	background-color: #CDF3F6;
-	padding-top: 90px;
-	padding-bottom: 90px;
+  background-color: #CDF3F6;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 #aboutmagazine p {
-	margin-right: 160px;
-	margin-left: 160px;
+  margin-right: 160px;
+  margin-left: 160px;
 }
-
-/* ----------------------------------------
-Lists
-------------------------------------------- */
 
 /* ----------------------------------------
 Layout
 ------------------------------------------- */
 
 #blog, #gallery {
-	margin-top: 90px;
-	margin-bottom: 40px;
+  margin-top: 90px;
+  margin-bottom: 40px;
 }
 
 #galleryh3 {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .article-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 11px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 11px;
 }
 
 .article-grid p {
-	margin: 40px 0;
+  margin: 40px 0;
 }
 
 .gallery-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 20px;
-	grid-row-gap: 40px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
 }
 
 /* ----------------------------------------
@@ -145,113 +141,143 @@ Header
 ------------------------------------------- */
 
 header {
-	color: white;
-	padding: 130px;
-	background-image: url('../images/home_header_bg.jpg');
-	background-size: cover;
-	background-position: center;
-	/*background-repeat: no-repeat;*/
+  color: white;
+  padding: 130px;
+  background-image: url('../images/home_header_bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
 }
-
-/* ----------------------------------------
-Buttons
-------------------------------------------- */
 
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
 
 footer p a {
-	font-weight: 400;
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
 }
 
 #keepintouch {
-	display: grid;
-	text-align: center;
-	grid-template-columns: 50% 50%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 50% 50%;
 }
 
 #keepintouch a {
-	border-style: solid;
+  border-style: solid;
 }
 
 footer {
-	text-align: center;
-	background: #CDF3F6;
-	padding-top: 20px;
-	padding-bottom: 2px;
-	margin-top: 50px;
+  text-align: center;
+  background: #CDF3F6;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  margin-top: 50px;
 }
 
 footer p {
-	margin-top: -10px;
-	margin-bottom: 5px;
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
 
 footer a {
-	text-align: center;
-	font-weight: 600;
-	text-decoration: none;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 8px;
-	text-transform: uppercase;
-	color: #44545E;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #44545E;
 }
 
+footer div a:hover {
+  color: blue;
+}
+
+/* ----------------------------------------
+Buttons and Input for email
+------------------------------------------- */
+
 #address, input {
-	margin-left: 200px;
-	background-color: white;
-	line-height: 30px;
-	width: 350px;
-	height: 30px;
-	text-align: center;
-	border-style: solid;
-	border-color: white;
-	letter-spacing: 1px;
-	font-style: normal;
-	font-size: 15px;
+  margin-left: 200px;
+  background-color: white;
+  line-height: 30px;
+  width: 350px;
+  height: 30px;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 15px;
 }
 
 /*Get rid of "double border look"*/
 
 input {
-	margin-left: 0;
-	border: 0;
-	padding: 0;
+  margin-left: 0;
+  border: 0;
+  padding: 0;
+}
+
+input:hover {
+  filter: invert();
+}
+
+button:hover {
+  filter: invert();
 }
 
 /*Style the grid and button to match*/
 
 #keep, button {
-	margin-left: 100px;
-	background-color: #CDF3F6;
-	border-style: solid;
-	letter-spacing: 1px;
-	line-height: 30px;
-	width: 200px;
-	height: 30px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	color: #44545E;
-	text-align: center;
+  margin-left: 100px;
+  background-color: #CDF3F6;
+  border-style: solid;
+  letter-spacing: 1px;
+  line-height: 30px;
+  width: 200px;
+  height: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #44545E;
+  text-align: center;
 }
 
 /*Get rid of "double border look"*/
 
 button {
-	margin-left: 0px;
-	border: 0;
-	padding: 0;
-	text-transform: uppercase;
+  margin-left: 0px;
+  border: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 hr {
-	margin-top: 30px;
-	border-style: solid;
+  margin-top: 30px;
+  border-style: solid;
+}
+
+/* Grow hover effect*/
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  transition-duration: 0.7s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  transform: scale(1.1);
+  color: blue;
 }

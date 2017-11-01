@@ -33,6 +33,14 @@ nav a {
   margin: 10px 40px;
 }
 
+.hamburger {
+  background-color: black;
+  font-size: 27px;
+  padding: 10px 30px;
+  display: none;
+  text-align: left;
+}
+
 html, body {
   top: 0;
   width: 100%;
@@ -133,7 +141,7 @@ Layout
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 40px;
+  /*grid-row-gap: 40px;*/
 }
 
 /* ----------------------------------------
@@ -208,7 +216,7 @@ Buttons and Input for email
   margin-left: 200px;
   background-color: white;
   line-height: 30px;
-  width: 350px;
+  width: 240px;
   height: 30px;
   text-align: center;
   border-style: solid;
@@ -239,7 +247,7 @@ button:hover {
 #keep, button {
   margin-left: 100px;
   background-color: #CDF3F6;
-  border-style: solid;
+  border-style: none;
   letter-spacing: 1px;
   line-height: 30px;
   width: 200px;
@@ -280,4 +288,80 @@ hr {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   transform: scale(1.1);
   color: blue;
+}
+/*Responsiveness*/
+@media screen and (max-width: 715px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hamburger {
+    display: block;
+  }
+  nav a {
+    display: block;
+    text-align: left;
+  }
+  nav {
+    text-align: left;
+    display: none;
+  }
+  body {
+    padding-top: 0;
+  }
+  header {
+    padding: 10px 10px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #aboutmagazine p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    /*grid-row-gap: 0;*/
+  }
+  #keep, button {
+    margin-left: 0px;
+    background-color: #CDF3F6;
+    border-style: solid;
+    letter-spacing: 1px;
+    line-height: 20px;
+    width: 150px;
+    height: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #44545E;
+    text-align: center;
+  }
+  #address, input {
+    margin-left: 3px;
+    background-color: white;
+    line-height: 30px;
+    width: 175px;
+    height: 30px;
+    text-align: center;
+    border-style: none;
+    border-color: white;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 15px;
+  }
+  #keepintouch {
+    padding-left: 19px;
+  }
 }

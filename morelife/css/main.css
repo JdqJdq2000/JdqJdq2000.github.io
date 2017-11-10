@@ -1,0 +1,177 @@
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+
+/* Fix to include padding and border in the total width for each element */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+
+img {
+  max-width: 100%;
+}
+
+/********** Main Body styles **********/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #AF2BBF;
+  background: #43C6AC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #191654, #43C6AC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
+/********** Main anchor styles **********/
+
+a {
+  text-decoration: none;
+  color: #AF2BBF;
+}
+
+/********** Heading standards **********/
+
+h4 {
+  font-weight: 400;
+  color: #AF2BBF;
+}
+
+/********** Banner1 **********/
+
+#banner1 {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  background-color: white;
+  align-items: flex-end;
+  padding: 0px 10px;
+  transition: all .4s ease-in-out;
+}
+
+#banner1 h3 {
+  text-align: left;
+  margin: 0;
+  padding: 2px;
+  color: black;
+}
+
+#b1rightcontent {
+  text-align: right;
+}
+
+#banner1 img {
+  max-height: 75%;
+}
+
+#banner1:hover {
+  opacity: .5;
+}
+
+/********** Banner2 **********/
+
+#banner2 {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  background-color: #5BC8AF;
+  align-items: flex-end;
+  padding: 0px 10px;
+  transition: all .4s ease-in-out;
+}
+
+#banner2 h3 {
+  text-align: left;
+  margin: 0;
+  padding: 2px;
+}
+
+#b2rightcontent {
+  text-align: right;
+}
+
+#banner2 img {
+  /*max-height: 75%;*/
+}
+
+#banner2:hover {
+  opacity: .5;
+}
+
+/********** nav **********/
+
+#logo1 img:hover {
+  transform: rotateY(360deg);
+}
+nav {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100px;
+  background-color: white;
+  align-items: flex-end;
+  padding: 0px 10px;
+  transition: all .4s ease-in-out;
+  margin: 0;
+  padding: 0 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 20px;
+  transition: all .5s ease-in-out;
+}
+
+#logo1 img {
+  max-height: 85%;
+  transition: all .5s ease-in-out;
+}
+
+nav a:hover {
+  transform: rotateY(360deg) scale(1.4, 1.4);
+}
+
+#startervid {
+  transition: all 5s ease-in-out;
+}
+
+#products {
+  text-align: center;
+  background-color: white;
+  margin: -5px 0 0 0;
+  padding: 20px;
+}
+
+#products h1 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  color: #AF2BBF;
+}
+#productwrapper {
+display: grid;
+text-align: center;
+grid-template-columns: 1fr 1fr 1fr;
+/*grid-template-rows: 100px;*/
+background-color: #5BC8AF;
+vertical-align: middle;
+align-items:  center;
+padding: 0px 10px;
+transition: all .4s ease-in-out;
+max-height: 100%;
+margin: 0;
+max-width: 1260px;
+}
+
+#productwrapper img{
+  max-height: 100%;
+}

@@ -19,7 +19,7 @@ img {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  color: #AF2BBF;
+  color: #48a500;
   background: #43C6AC;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #191654, #43C6AC);
@@ -33,14 +33,23 @@ body {
 
 a {
   text-decoration: none;
-  color: #AF2BBF;
+  color: #48a500;
+  font-size: 14px;
 }
 
 /********** Heading standards **********/
 
+header {
+  padding: 200px;
+  background-image: url('../img/pexels-photo-531765.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 h4 {
   font-weight: 400;
-  color: #AF2BBF;
+  color: #48a500;
 }
 
 /********** Banner1 **********/
@@ -49,8 +58,8 @@ h4 {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px;
-  background-color: white;
+  grid-template-rows: 35px;
+  background-color: #48a500;
   align-items: flex-end;
   padding: 0px 10px;
   transition: all .4s ease-in-out;
@@ -58,9 +67,11 @@ h4 {
 
 #banner1 h3 {
   text-align: left;
+  font-size: 14px;
   margin: 0;
   padding: 2px;
-  color: black;
+  color: white;
+  transition: all .3s ease-in-out;
 }
 
 #b1rightcontent {
@@ -68,11 +79,11 @@ h4 {
 }
 
 #banner1 img {
-  max-height: 75%;
+  max-height: 100%;
 }
 
-#banner1:hover {
-  opacity: .5;
+#banner1 h3:hover {
+  color: #ff0dff;
 }
 
 /********** Banner2 **********/
@@ -81,41 +92,46 @@ h4 {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px;
-  background-color: #5BC8AF;
+  grid-template-rows: 60px;
+  background-color: #9cff00;
   align-items: flex-end;
   padding: 0px 10px;
   transition: all .4s ease-in-out;
 }
 
-#banner2 h3 {
+/*#banner2 h3 {
   text-align: left;
   margin: 0;
   padding: 2px;
-}
+}*/
 
 #b2rightcontent {
   text-align: right;
 }
 
 #banner2 img {
-  /*max-height: 75%;*/
+  max-height: 75%;
+  padding-bottom: 5px;
 }
 
-#banner2:hover {
+/*#banner2:hover {
   opacity: .5;
-}
+}*/
 
 /********** nav **********/
 
 #logo1 img:hover {
   transform: rotateY(360deg);
 }
+
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: grid;
   text-align: left;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 100px;
+  grid-template-rows: 90px;
   background-color: white;
   align-items: flex-end;
   padding: 0px 10px;
@@ -126,21 +142,23 @@ nav {
 
 nav a {
   display: inline-block;
-  padding: 0 20px;
-  transition: all .5s ease-in-out;
+  font-size: 18px;
+  padding: 0 15px;
+  transition: all .3s ease-in-out;
 }
 
 #logo1 img {
-  max-height: 85%;
+  max-height: 90%;
   transition: all .5s ease-in-out;
 }
 
 nav a:hover {
-  transform: rotateY(360deg) scale(1.4, 1.4);
+  transform: scale(1.1, 1.1);
+  color: #ff0dff;
 }
 
-#startervid {
-  transition: all 5s ease-in-out;
+#landingpage {
+  width: auto;
 }
 
 #products {
@@ -148,6 +166,7 @@ nav a:hover {
   background-color: white;
   margin: -5px 0 0 0;
   padding: 20px;
+  /*transition: all .4s ease-in-out;*/
 }
 
 #products h1 {
@@ -155,23 +174,67 @@ nav a:hover {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 42px;
-  color: #AF2BBF;
-}
-#productwrapper {
-display: grid;
-text-align: center;
-grid-template-columns: 1fr 1fr 1fr;
-/*grid-template-rows: 100px;*/
-background-color: #5BC8AF;
-vertical-align: middle;
-align-items:  center;
-padding: 0px 10px;
-transition: all .4s ease-in-out;
-max-height: 100%;
-margin: 0;
-max-width: 1260px;
+  color: #48a500;
+  /*transition: all .7s ease-in-out;*/
 }
 
-#productwrapper img{
+#productwrapper {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+  background-color: #5BC8AF;
+  align-items: center;
+  transition: all .7s ease-in-out;
   max-height: 100%;
+  margin: 0 auto;
+  max-width: 1260px;
+  background-color: white;
+}
+
+#productwrapper img {
+  max-height: 100%;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+#productwrapper img:hover {
+  opacity: 0.5;
+  border-style: solid;
+  border-width: 2px;
+  border-color: inherit;
+}
+
+section h1 {
+  padding-bottom: 20px;
+}
+
+#productwrapper button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 80%;
+  max-height: 80%;
+  background-color: white;
+  font-size: 14px;
+  padding: 15px 0;
+  text-align: justify;
+  transition: all .3s ease-in-out;
+}
+
+#productwrapper button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#products a:hover {
+  transform: scale(1.1, 1.1);
+  color: #ff0dff;
+}
+
+#products a {
+  display: inline-block;
+  font-size: 42px;
+  padding: 0 4px;
+  transition: all .3s ease-in-out;
 }

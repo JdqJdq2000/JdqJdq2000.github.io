@@ -12,6 +12,7 @@ Base styles:
 
 img {
   max-width: 100%;
+  /*display: inline-block;*/
 }
 
 /********** Main Body styles **********/
@@ -20,13 +21,13 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: #48a500;
-  background: #43C6AC;
+  /*background: #43C6AC;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+  /*background: -webkit-linear-gradient(to right, #191654, #43C6AC);*/
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #191654, #43C6AC);
+  /*background: linear-gradient(to right, #191654, #43C6AC);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /*font-family: 'Roboto', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/*/
 }
 
 /********** Main anchor styles **********/
@@ -45,13 +46,28 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  text-align: center;
 }
 
-h4 {
-  font-weight: 400;
+h4, h1, h2{
+  font-weight: 600;
   color: #48a500;
 }
 
+header h1 {
+  color: white;
+}
+
+h1 {
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
 /********** Banner1 **********/
 
 #banner1 {
@@ -60,7 +76,7 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 35px;
   background-color: #48a500;
-  align-items: flex-end;
+  align-items: center;
   padding: 0px 10px;
   transition: all .4s ease-in-out;
 }
@@ -162,11 +178,10 @@ nav a:hover {
 }
 
 #products {
-  text-align: center;
   background-color: white;
   margin: -5px 0 0 0;
   padding: 20px;
-  /*transition: all .4s ease-in-out;*/
+ transition: all .4s ease-in-out;*/
 }
 
 #products h1 {
@@ -175,17 +190,14 @@ nav a:hover {
   font-weight: 400;
   font-size: 42px;
   color: #48a500;
-  /*transition: all .7s ease-in-out;*/
 }
 
 #productwrapper {
   display: grid;
-  text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   grid-gap: 10px;
   background-color: #5BC8AF;
-  align-items: center;
   transition: all .7s ease-in-out;
   max-height: 100%;
   margin: 0 auto;
@@ -201,7 +213,6 @@ nav a:hover {
 
 #productwrapper img:hover {
   opacity: 0.5;
-  border-style: solid;
   border-width: 2px;
   border-color: inherit;
 }
@@ -212,15 +223,13 @@ section h1 {
 
 #productwrapper button {
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
   border: 0;
-  max-width: 80%;
-  max-height: 80%;
   background-color: white;
   font-size: 14px;
   padding: 15px 0;
-  text-align: justify;
   transition: all .3s ease-in-out;
+  border-top: 0;
 }
 
 #productwrapper button:hover {
@@ -237,4 +246,24 @@ section h1 {
   font-size: 42px;
   padding: 0 4px;
   transition: all .3s ease-in-out;
+}
+button {
+  align-self: start;
+}
+#cbdlineresearch {
+display: grid;
+text-align: center;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 300px;
+border: solid;
+grid-gap: 20px;
+padding: 0px 10px;
+transition: all .4s ease-in-out;
+width: 0 100%;
+height: 100%;*/
+border-top: 0;
+}
+
+* {
+  border: solid;
 }

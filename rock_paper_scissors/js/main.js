@@ -53,8 +53,8 @@ play(humanPlay, computerPlay);
 pickRandomPlay();
 play(humanPlay, computerPlay);
 
-// It's all over!
-if (humanScore === 1 && computerScore === 1) {
+// It's anyone's game!
+if (humanScore === 1 && computerScore === 1 || humanScore === 0 && computerScore === 0){
   console.log("It's anyone's game!!!!!!  VERY EXCITING!!!!");
 }
 

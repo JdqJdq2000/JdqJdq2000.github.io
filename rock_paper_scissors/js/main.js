@@ -54,6 +54,11 @@ pickRandomPlay();
 play(humanPlay, computerPlay);
 
 // It's all over!
+if (humanScore === 1 && computerScore === 1) {
+  console.log("It's anyone's game!!!!!!  VERY EXCITING!!!!");
+}
+
+// It's all over!
 if (humanScore === 2 || computerScore === 2) {
   console.log("It's all over!!!!!!  But let's play a third round anyway!");
 }

@@ -10,6 +10,7 @@
   #products ul {
     top: 50px;
 }
+}
 
 @media screen and (max-width: 930px) {
   nav a {
@@ -31,7 +32,7 @@
   nav a {
     font-size: 12px;
   }
-
+}
 
 @media screen and (max-width: 730px) {
   body {
@@ -140,6 +141,8 @@
     position: sticky;
     top: 40px;
 }
+}
+
 @media screen and (max-width: 500px) {
 #products a {
   display: none;

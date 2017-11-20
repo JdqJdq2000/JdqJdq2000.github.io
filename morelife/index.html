@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>More Life</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600|Roboto:400,700" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -20,6 +21,7 @@
   <!--  Style sheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/_atmedia.css">
 
   <!-- HEAD END -->
 </head>
@@ -27,17 +29,11 @@
 <!-- BODY START -->
 
 <body>
-  <!-- <a href="" class="hamburger"><i class="fa fa-bars" aria-hidden="false"></i></a>
-  <nav>
-    <a href="#" class="hvr-grow">About</a>
-    <a href="#" class="hvr-grow">Gallery</a>
-    <a href="#" class="hvr-grow">Blog</a>
-    <a href="#" class="hvr-grow">Contact</a>
-  </nav> -->
+
 
   <!-- Banner#1 - all pages -->
   <a href="#">
-    <div id="banner1">
+    <div class="banner1">
       <h3>Learn about how CBD can help you...</h3>
       <div></div>
       <!-- <div id="b1rightcontent"><img src="img/morelifepng.png " alt="morelife greenblue text png logo"></div> -->
@@ -45,7 +41,7 @@
   </a>
   <!-- Banner#2 - all pages -->
   <a href="#">
-    <div id="banner2">
+    <div class="banner2">
       <h3></h3>
       <!-- <div id="b2centercontent"><img src="img/morelifegreenbluetext.png " alt="morelife greenblue text png logo"></div> -->
       <div></div>
@@ -53,11 +49,27 @@
   </a>
   <!-- Sticky Header  - all pages -->
 
+  <div class="nav-wrapper">
+    <a class="hamburger" href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <nav id="burgernav">
+      <ul>
+        <a href="#">Home</a>
+        <a href="#">Evolve Line</a>
+        <a href="#">How CBD Works</a>
+        <a href="#">Benefits</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Shop</a>
+        <a href="#">Help Center</a>
+      </ul>
+    </nav>
+  </div>
+
   <nav>
     <div id="logo1">
       <img src="img/purpleredroundlogo.png" alt="More Life Logo">
     </div>
-    <ul>
+    <ul id="mainnav">
       <a href="#">Home</a>
       <a href="#">Evolve Line</a>
       <a href="#">How CBD Works</a>
@@ -69,15 +81,6 @@
     </ul>
   </nav>
 
-  <!-- <img id="landingpage" src="" alt="rainbowbubbles"> -->
-  <!-- Image carousel under header -->
-  <!-- <div id="startervid">
-      <video width=100% height=100% autoplay loop poster "img/maryjane.jpg">
-    <source src="img/greenelectric.mp4" type="video/mp4">
-    <!-- <source src="movie.ogg" type="video/ogg"> -->
-  <!-- Your browser does not support the video tag. -->
-  <!-- </video>
-    </div> -->
   <header>
     <h1>more life</h1>
 
@@ -91,46 +94,49 @@
       <a href="#welldrops">WELL/</a>
       <a href="#healcream">HEAL</a>
     </ul>
-    <div id="productwrapper">
-      <img id="restspray" src="img\pinkyellotextlogo.png" alt="REST spray">
-      <img id="relaxspray" src="img\pinkyellotextlogo.png" alt="RELAX spray">
-      <img id="focusspray" src="img\pinkyellotextlogo.png" alt="FOCUS spray">
-      <button type="button">MORE LIFE's combination of CBD infused with Melatonin, GABA, and Valerian Root creates a powerhouse elixir to help you attain the deepest rest possible.</button>
-
-      <button type="button">MORE LIFE's Relax spray treats a variety of anxiety related disorders, including panic attacks, OCD, Social phobia, PTSD, general anxiety and mild to moderate depression.</button>
-
-      <button type="button">MORE LIFE's FOCUS provides a kick with B-12, Ginseng and Guarana infusions, to help arrive at optimum energy levels quickly, maintain endurance, mental focus along with aiding as a lactic acid buffer to prevent soreness and muscle fatigue.</button>
-
-      <img id="welldrops" src="img\pinkyellotextlogo.png" alt="WELL drops">
-      <img id="wellcapsules" src="img\pinkyellotextlogo.png" alt="WELL capsules">
-      <img id="healcream" src="img\pinkyellotextlogo.png" alt="HEAL cream">
-
-      <button type="button">MORE LIFE's WELL drops are a powerhouse recipe packed with 750mg of pure CBD. Our formula contains 500+mg cannabinoids providing 15mg of cannabinoids Per Serving.</button>
-
-      <button type="button">MORE LIFE's WELL CBD Oil Capsules contains Full Spectrum CBD Hemp Oil and natural Hemp Extract. Each serving of one capsules contains 25% phytocannabinoids Rich Full Spectrum Hemp oil, which includes CBD and may include CBG, CBGA, CBN, CBNA, CBC, CBCA, THCV, CBDA and CBLA.</button>
-
-      <button type="button">MORE LIFE's Heal cream is the answer for muscle aches, rheumatoid arthritis, and many other joint pains. Our unique formulation offers deep skin penetration to help balance the body and ease sore muscles, inflammation, swelling and bruising, helping muscles to relax and recover naturally.</button>
-
+    <div class="productwrapper">
+      <div>
+        <img id="restspray" src="img\spray.jpg" alt="REST spray">
+        <button type="button">MORE LIFE's combination of CBD infused with Melatonin, GABA, and Valerian Root creates a powerhouse elixir to help you attain the deepest rest possible.</button>
+      </div>
+      <div>
+        <img id="relaxspray" src="img\spray.jpg" alt="RELAX spray">
+        <button type="button">MORE LIFE's Relax spray treats a variety of anxiety related disorders, including panic attacks, OCD, Social phobia, PTSD, general anxiety and mild to moderate depression.</button>
+      </div>
+      <div>
+        <img id="focusspray" src="img\spray.jpg" alt="FOCUS spray">
+        <button type="button">MORE LIFE's FOCUS provides a kick with B-12, Ginseng and Guarana infusions, to help arrive at optimum energy levels quickly, maintain endurance, mental focus along with aiding as a lactic acid buffer to prevent soreness and muscle fatigue.</button>
+      </div>
+      <div>
+        <img id="welldrops" src="img\spray.jpg" alt="WELL drops">
+        <button type="button">MORE LIFE's WELL drops are a powerhouse recipe packed with 750mg of pure CBD. Our formula contains 500+mg cannabinoids providing 15mg of cannabinoids Per Serving.</button>
+      </div>
+      <div>
+        <img id="wellcapsules" src="img\spray.jpg" alt="WELL capsules">
+        <button type="button">MORE LIFE's WELL CBD Oil Capsules contains Full Spectrum CBD Hemp Oil and natural Hemp Extract. Each serving of one capsules contains 25% phytocannabinoids Rich Full Spectrum Hemp oil, which includes CBD and may include CBG, CBGA, CBN, CBNA, CBC, CBCA, THCV, CBDA and CBLA.</button>
+      </div>
+      <div>
+        <img id="healcream" src="img\spray.jpg" alt="HEAL cream">
+        <button type="button">MORE LIFE's Heal cream is the answer for muscle aches, rheumatoid arthritis, and many other joint pains. Our unique formulation offers deep skin penetration to help balance the body and ease sore muscles, inflammation, swelling and bruising, helping muscles to relax and recover naturally.</button>
+      </div>
     </div>
   </section>
   <!-- Section 2 - Evolve CBD Line, Proven Researched Effects of CBD -->
   <section id="cbdlineresearch">
-    <div>
+    <article id="evolve">
       <h2>Evolve CBD line</h2>
       <p>We believe in the healing and medicinal properties of the hemp plant and its use as an alternative or addition to Western medicine. Through years of research, we have created a unique collection of all-natural organic wellness products based on
         our proprietary 99% pure CBD Hemp Extract formulas found and extracted from organic non-GMO hemp farms. Our products are non-psychoactive containing no pesticides, heavy metals or toxins, and can be sold in all 50 states and in many countries
         worldwide.
       </p>
-    </div>
-    <div>
-      <h2>img1</h2>
-      <img src="img/morelifepng.png" alt="">
-    </div>
-    <div>
-      <h2>img2</h2>
-      <img src="img/morelifepng.png" alt="">
-    </div>
-    <div>
+      <div id="img1">
+        <img src="img/maryjane.jpg" alt="">
+      </div>
+    </article>
+    <article id="proven">
+      <div id=img2>
+        <img src="img/greenplant.jpg" alt="">
+      </div>
       <h2>Proven Researched Effects of CBD</h2>
       <ul>
         <li>Analgesic/pain relief</li>
@@ -139,7 +145,7 @@
         <li>Aeuroprotectant</li>
         <li>Anti-oxidant</li>
       </ul>
-    </div>
+    </article>
   </section>
   <!-- Section 3 - Collapseable - Picture, How CBD Works, How Fast Does CBD Oil Work? -->
   <section id="howfast">

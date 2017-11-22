@@ -2,7 +2,7 @@
 // a. Slide up the header
 $('header').on('click', function() {
   $('header').slideUp(300);
-})
+});
 
 // 2. When the "Throw a party" button is clicked
 $('#party-time').on('click', function() {
@@ -22,14 +22,14 @@ $('#party-time').on('click', function() {
   $('.add-para').append("<p>Time to party!!!<p>");
   // BONUS: Add an h4 that says "Wild!" to the beginning of #box12 (Hint: you'll need to look up the prepend() method)
   $('#box12').prepend("<h4>Wild!<h4>");
-})
+});
 
 
 // 3. When the anchor in #box2 is clicked (hint: your selector could be $('#box2 a') )
 $('#box2 a').on('click', function() {
   // a. Fade in the footer slowly
   $('footer').fadeIn('slow');
-})
+});
 
 // 4. When the "Party Pooper" button is clicked
 $('#reset').on('click', function() {
@@ -56,4 +56,4 @@ $('#reset').on('click', function() {
 
   $('h4').remove(":contains('Wild!')");
   // make sure to ONLY remove those paragraphs and h3s you added, not all the paragraphs and h3s!
-})
+});

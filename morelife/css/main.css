@@ -312,7 +312,7 @@ button {
 
 #centerpic {
   margin: 20px 0;
-  padding: 150px 10px;
+  padding: 90px 10px;
   background-image: url('../img/waterfall.jpg');
   background-size: cover;
   overflow: hidden;
@@ -348,6 +348,13 @@ button {
   padding: 0 20px;
   text-align: justify;
   font-size: 18px;
+
+
+}
+#aboutus  {
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 #cbdworks h2 {
@@ -384,9 +391,97 @@ button {
   text-align: center;
   height: auto;
 }
+/*++++++++++++++++++++++++++++++++*/
+#benefits {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 2fr 1fr;
+  border-top: solid;
+  border-top-width: 2px;
+  padding: 0px 10px 10px 10px;
+  grid-gap: 0px;
+  transition: all .7s ease-in-out;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 1260px;
+  background-color: white;
+}
 
+#benefits p {
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#img5, #img6 {
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+#img6 {
+  padding-top: 20px;
+}
+
+#cbdbenefits h2 {
+  padding: 0 40px;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+#cbdsideeffects h2 {
+  font-size: 32px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#cbdbenefits ul {
+  text-align: center;
+  font-size: 22px;
+  line-height: 50px;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+#cbdbenefits {
+  border-right: solid;
+  border-right-width: 1px;
+}
+
+#cbdsideeffects {
+  border-left: solid;
+  border-left-width: 1px;
+}
+
+#prefooterpic {
+  margin: 20px 0 0 0;
+  padding: 150px 10px;
+  background-image: url('../img/waterfall.jpg');
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  height: auto;
+}
+footer {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  grid-gap: 0px;
+  transition: all .7s ease-in-out;
+  max-height: 100%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  align-items: flex-end;
+}
+footer div{
+  padding: 20px;
+}
 @media screen and (max-width: 1120px) {
-  #img2, #img1 {
+  #img2, #img1, #img5, #img6 {
     display: none;
   }
   nav {
@@ -551,6 +646,53 @@ button {
         text-align: center;
         position: sticky;
         top: 40px;
+      }
+
+      #benefits {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        border: none;
+        border-top-width: 2px;
+        padding: 0px 10px 10px 10px;
+        grid-gap: 0px;
+        transition: all .7s ease-in-out;
+        max-height: 100%;
+        margin: 0 auto;
+        max-width: 1260px;
+        background-color: white;
+      }
+      #cbdbenefits {
+        border-right: none;
+        border-right-width: 1px;
+      }
+
+      #cbdsideeffects {
+        border-left: none;
+        border-left-width: 1px;
+      }
+      #howfast {
+        display: grid;
+        text-align: justify;
+        grid-template-columns: 1fr;
+        border-bottom: none;
+        border-bottom-width: 2px;
+        padding: 10px 10px 0 10px;
+        grid-gap: 0px;
+        transition: all .7s ease-in-out;
+        max-height: 100%;
+        margin: 0 auto;
+        max-width: 1260px;
+        background-color: white;
+      }
+      #cbdworks {
+        border-right: none;
+        border-right-width: 1px;
+      }
+
+      #cbdfast {
+        border-left: none;
+        border-left-width: 1px;
       }
     }
     @media screen and (max-width: 500px) {

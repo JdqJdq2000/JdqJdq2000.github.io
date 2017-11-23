@@ -31,7 +31,7 @@ a {
 /********** Heading standards **********/
 
 header {
-  padding: 200px;
+  padding: 100px;
   background-image: url('../img/pexels-photo-531765.jpeg');
   background-size: cover;
   background-attachment: fixed;
@@ -256,7 +256,7 @@ button {
   grid-template-columns: 2fr 1fr;
   border-top: solid;
   border-top-width: 2px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px 20px;
   grid-gap: 0px;
   transition: all .7s ease-in-out;
   max-height: 100%;
@@ -310,6 +310,13 @@ button {
   border-left-width: 1px;
 }
 
+#check1 {
+  text-align: right;
+  margin: 0 auto;
+  padding: 45px 80px 20px 0;
+  transform: scale(1.5);
+}
+
 #centerpic {
   margin: 20px 0;
   padding: 90px 10px;
@@ -321,6 +328,11 @@ button {
   font-size: 22px;
   text-align: center;
   height: auto;
+}
+
+#centerpic h3 {
+  max-width: 1060px;
+  display: inline-block;
 }
 
 #howfast {
@@ -348,10 +360,9 @@ button {
   padding: 0 20px;
   text-align: justify;
   font-size: 18px;
-
-
 }
-#aboutus  {
+
+#aboutus {
   align-items: center;
   margin: 0 auto;
   max-width: 1260px;
@@ -379,6 +390,13 @@ button {
   border-left-width: 1px;
 }
 
+#check2 {
+  text-align: right;
+  margin: 0 auto;
+  padding: 45px 215px 20px 0;
+  transform: scale(1.5);
+}
+
 #aboutuspic {
   margin: 20px 0;
   padding: 150px 10px;
@@ -391,14 +409,16 @@ button {
   text-align: center;
   height: auto;
 }
+
 /*++++++++++++++++++++++++++++++++*/
+
 #benefits {
   display: grid;
   text-align: center;
   grid-template-columns: 2fr 1fr;
   border-top: solid;
   border-top-width: 2px;
-  padding: 0px 10px 10px 10px;
+  padding: 0 20px;
   grid-gap: 0px;
   transition: all .7s ease-in-out;
   max-height: 100%;
@@ -452,6 +472,13 @@ button {
   border-left-width: 1px;
 }
 
+#check3 {
+  text-align: right;
+  margin: 0 auto;
+  padding: 440px 80px 100px 0;
+  transform: scale(1.5);
+}
+
 #prefooterpic {
   margin: 20px 0 0 0;
   padding: 150px 10px;
@@ -464,6 +491,7 @@ button {
   text-align: center;
   height: auto;
 }
+
 footer {
   display: grid;
   text-align: left;
@@ -477,12 +505,23 @@ footer {
   color: white;
   align-items: flex-end;
 }
-footer div{
+
+footer div {
   padding: 20px;
 }
+
 @media screen and (max-width: 1120px) {
-  #img2, #img1, #img5, #img6 {
+  #centerpic, #prefooterpic, #img2, #img1, #img5, #img6 {
     display: none;
+  }
+  #check1, #check3 {
+    display: none;
+  }
+  #check2 {
+    text-align: right;
+    margin: 0 auto;
+    padding: 45px 170px 20px 0;
+    transform: scale(1.5);
   }
   nav {
     grid-template-columns: 100%;
@@ -528,186 +567,207 @@ footer div{
     line-height: 30px;
     list-style-type: none;
   }
-  @media screen and (max-width: 820px) {
-    nav a {
-      font-size: 12px;
-    }
-    #centerpic h3 {
-      font-size: 16px;
-    }
-    @media screen and (max-width: 740px) {
-      body {
-        min-width: 250px;
-      }
-      #centerpic {
-        padding: 10px;
-      }
-      .nav-wrapper {
-        display: block;
-        position: sticky;
-        top: 0px;
-        z-index: 20;
-        background-color: white;
-      }
-      #burgernav {
-        display: none;
-      }
-      .banner1 {
-        display: grid;
-        text-align: center;
-        grid-template-columns: 1fr;
-      }
-      .banner1 h3 {
-        font-size: 12px;
-      }
-      .banner2 {
-        display: none;
-      }
-      #mainnav {
-        display: none;
-      }
-      h1 {
-        font-size: 42px;
-        letter-spacing: 2px;
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: 2px;
-      }
-      #proven h2 {
-        margin: 0px;
-        padding-top: 10px;
-      }
-      #proven ul {
-        padding: 20px;
-        margin: 0;
-      }
-      h3 {
-        font-size: 14px
-      }
-      .productwrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 10px;
-        grid-gap: 10px;
-        background-color: #5BC8AF;
-        transition: all .7s ease-in-out;
-        max-height: 100%;
-        margin: 0 auto;
-        max-width: 1260px;
-        background-color: white;
-      }
-      #cbdlineresearch {
-        display: grid;
-        text-align: left;
-        grid-template-columns: 1fr;
-        grid-template-rows: 220px;
-        border-top: solid;
-        border-bottom: none;
-        grid-gap: 20px;
-        padding: 0px 20px 20px 20px;
-        transition: all .4s ease-in-out;
-        /*width: 0 100%;*/
-        height: 100%;
-        border-top: 0;
-      }
-      header {
-        padding: 100px 50px;
-        background-image: url('../img/pexels-photo-531765.jpeg');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        text-align: center;
-      }
-      #products a {
-        display: inline-block;
-        font-size: 18px;
-        padding: 0 4px;
-        transition: all .3s ease-in-out;
-      }
-      #products {
-        padding-bottom: 5px;
-      }
-      #logo1 img {
-        display: none;
-      }
-      #img2, #img1 {
-        display: none;
-      }
-      #evolve {
-        border-right: none;
-      }
-      #proven {
-        border-left: none;
-      }
-      #products ul {
-        text-align: center;
-        position: sticky;
-        top: 40px;
-      }
+}
 
-      #benefits {
-        display: grid;
-        text-align: center;
-        grid-template-columns: 1fr;
-        border: none;
-        border-top-width: 2px;
-        padding: 0px 10px 10px 10px;
-        grid-gap: 0px;
-        transition: all .7s ease-in-out;
-        max-height: 100%;
-        margin: 0 auto;
-        max-width: 1260px;
-        background-color: white;
-      }
-      #cbdbenefits {
-        border-right: none;
-        border-right-width: 1px;
-      }
+@media screen and (max-width: 820px) {
+  nav a {
+    font-size: 12px;
+  }
+  #aboutuspic {
+    display: none;
+  }
+  #check2 {
+    display: none;
+  }
+}
 
-      #cbdsideeffects {
-        border-left: none;
-        border-left-width: 1px;
-      }
-      #howfast {
-        display: grid;
-        text-align: justify;
-        grid-template-columns: 1fr;
-        border-bottom: none;
-        border-bottom-width: 2px;
-        padding: 10px 10px 0 10px;
-        grid-gap: 0px;
-        transition: all .7s ease-in-out;
-        max-height: 100%;
-        margin: 0 auto;
-        max-width: 1260px;
-        background-color: white;
-      }
-      #cbdworks {
-        border-right: none;
-        border-right-width: 1px;
-      }
+@media screen and (max-width: 740px) {
+  body {
+    min-width: 250px;
+  }
+  #centerpic {
+    padding: 10px;
+  }
+  .nav-wrapper {
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    background-color: white;
+  }
+  #burgernav {
+    display: none;
+  }
+  .banner1 {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .banner1 h3 {
+    font-size: 12px;
+  }
+  .banner2 {
+    display: none;
+  }
+  #mainnav {
+    display: none;
+  }
+  h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  #proven h2 {
+    margin: 0px;
+    padding-top: 10px;
+  }
+  #proven ul {
+    padding: 20px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 14px
+  }
+  .productwrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+    background-color: #5BC8AF;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    background-color: white;
+  }
+  #cbdlineresearch {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px;
+    border-top: solid;
+    border-bottom: none;
+    grid-gap: 20px;
+    padding: 0px 20px 20px 20px;
+    transition: all .4s ease-in-out;
+    /*width: 0 100%;*/
+    height: 100%;
+    border-top: 0;
+  }
+  header {
+    padding: 100px 50px;
+    background-image: url('../img/pexels-photo-531765.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+  }
+  #products a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 4px;
+    transition: all .3s ease-in-out;
+  }
+  #products {
+    padding-bottom: 5px;
+  }
+  #logo1 img {
+    display: none;
+  }
+  #img2, #img1 {
+    display: none;
+  }
+  #evolve {
+    border-right: none;
+  }
+  #proven {
+    border-left: none;
+  }
+  #products ul {
+    text-align: center;
+    position: sticky;
+    top: 40px;
+  }
+  #benefits {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    border: none;
+    border-top-width: 2px;
+    padding: 0px 10px 10px 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    background-color: white;
+  }
+  #cbdbenefits {
+    border-right: none;
+    border-right-width: 1px;
+  }
+  #cbdsideeffects {
+    border-left: none;
+    border-left-width: 1px;
+  }
+  #howfast {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 1fr;
+    border-bottom: none;
+    border-bottom-width: 2px;
+    padding: 10px 10px 0 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    background-color: white;
+  }
+  #cbdworks {
+    border-right: none;
+    border-right-width: 1px;
+  }
+  #cbdfast {
+    border-left: none;
+    border-left-width: 1px;
+  }
+  footer {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr;
+    padding: 10px 10px 0 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    align-items: flex-end;
+  }
+  footer div {
+    padding: 20px;
+  }
+}
 
-      #cbdfast {
-        border-left: none;
-        border-left-width: 1px;
-      }
-    }
-    @media screen and (max-width: 500px) {
-      #products a {
-        display: none;
-      }
-      #cbdlineresearch {
-        grid-template-rows: 360px;
-      }
-      header {
-        padding: 2px;
-      }
-      body {
-        min-width: 360px;
-        padding: 10px;
-        text-align: justify;
-      }
-    }
+@media screen and (max-width: 500px) {
+  #products a {
+    display: none;
+  }
+  #cbdlineresearch {
+    grid-template-rows: 360px;
+  }
+  header {
+    padding: 2px;
+  }
+  body {
+    min-width: 360px;
+    padding: 10px;
+    text-align: justify;
+  }
+}

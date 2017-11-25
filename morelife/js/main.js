@@ -70,10 +70,14 @@ $('#focusanchor').on('click', function() {
 });
 
 $('#wellanchor').on('click', function() {
+  setTimeout(function() {
   $('#welldrops').toggleClass('rotateproduct');
   $('#wellcapsules').toggleClass('rotateproduct');
+    }, 500);
 });
 
 $('#healanchor').on('click', function() {
+    setTimeout(function() {
   $('#healcream').toggleClass('rotateproduct');
+    }, 500);
 });

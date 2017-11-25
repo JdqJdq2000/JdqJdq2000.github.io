@@ -29,7 +29,8 @@
 <!-- BODY START -->
 
 <body>
-
+  <div id="top">
+  </div>
 
   <!-- Banner#1 - all pages -->
   <a href="#">
@@ -50,17 +51,19 @@
   <!-- Sticky Header  - all pages -->
 
   <div class="nav-wrapper">
-    <a class="hamburger" href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <a class="hamburger" href=""><i class="fa fa-bars" aria-hidden="false"></i></a>
     <nav id="burgernav">
-      <ul>
-        <a href="#">Home</a>
-        <a href="#">Evolve Line</a>
-        <a href="#">Benefits</a>
-        <a href="#">How CBD Works</a>
-        <a href="#">About Us</a>
-        <a href="#">FAQ</a>
-        <a href="#">Help Center</a>
-      </ul>
+      <div>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#products">Evolve Line</a></li>
+          <li><a href="#cbdlineresearch">Benefits</a></li>
+          <li><a href="#howitworks">How CBD Works</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#contactus">Help Center</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 
@@ -69,10 +72,10 @@
       <img src="img/purpleredroundlogo.png" alt="More Life Logo">
     </div>
     <ul id="mainnav">
-      <a href="#">Home</a>
+      <a href="#top">Home</a>
       <a href="#products">Evolve Line</a>
       <a href="#cbdlineresearch">Benefits</a>
-      <a href="#howitworks">How CBD Works</a>
+      <a href="#howfast">How CBD Works</a>
       <a href="#aboutus">About Us</a>
       <a href="#">FAQ</a>
       <a href="#contactus">Help Center</a>
@@ -86,11 +89,11 @@
   <!-- Section 1 - Products -->
   <section id="products">
     <ul>
-      <a href="#restspray">REST/</a>
-      <a href="#relaxspray">RELAX/</a>
-      <a href="#focusspray">FOCUS/</a>
-      <a href="#welldrops">WELL/</a>
-      <a href="#healcream">HEAL</a>
+      <a id="restanchor" href="#restspray">REST/</a>
+      <a id="relaxanchor" href="#relaxspray">RELAX/</a>
+      <a id="focusanchor" href="#focusspray">FOCUS/</a>
+      <a id="wellanchor" href="#welldrops">WELL/</a>
+      <a id="healanchor" href="#healcream">HEAL</a>
     </ul>
     <div class="productwrapper">
       <div>
@@ -227,14 +230,13 @@
   <footer>
     <div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Evolve Line</a></li>
-        <li><a href="#">How CBD Works</a></li>
-        <li><a href="#">Benefits</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#products">Evolve Line</a></li>
+        <li><a href="#cbdlineresearch">Benefits</a></li>
+        <li><a href="#howitworks">How CBD Works</a></li>
+        <li><a href="#aboutus">About Us</a></li>
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Help Center</a></li>
+        <li><a href="#contactus">Help Center</a></li>
       </ul>
     </div>
     <div>
@@ -256,6 +258,7 @@
   <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- <script src="js/jquery-1.12.0.min.js"></script> -->
   <script src="js/main.js"></script>
+  <!-- <script src='jquery.transit.js'></script> -->
 
 
 </body>

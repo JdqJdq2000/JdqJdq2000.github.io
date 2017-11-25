@@ -140,6 +140,7 @@ nav {
   background-color: white;
   align-items: flex-end;
   transition: all .4s ease-in-out;
+  min-height: 90px;
   /*margin: 0;*/
   /*padding: -5px 10px 200px 10px;*/
 }
@@ -204,6 +205,7 @@ nav a:hover {
   opacity: 0.5;
   border-width: 2px;
   border-color: inherit;
+  /*transform:rotateX(360deg);*/
 }
 
 section h1 {
@@ -418,6 +420,8 @@ button {
   grid-template-columns: 2fr 1fr;
   border-top: solid;
   border-top-width: 2px;
+  border-bottom: solid;
+  border-bottom-width: 2px;
   padding: 0 20px;
   grid-gap: 0px;
   transition: all .7s ease-in-out;
@@ -510,6 +514,19 @@ footer div {
   padding: 20px;
 }
 
+.rotateproduct {
+  transition: .2s linear;
+  transform: rotateY(360deg);
+  }
+
+#burgernav {
+  display: none;
+}
+
+.displayburger {
+  display:block;
+  text-align: left;
+}
 @media screen and (max-width: 1120px) {
   #centerpic, #prefooterpic, #img2, #img1, #img5, #img6 {
     display: none;
@@ -523,13 +540,16 @@ footer div {
     padding: 45px 170px 20px 0;
     transform: scale(1.5);
   }
+  footer {
+    margin-top: 20px;
+  }
   nav {
     grid-template-columns: 100%;
     grid-template-rows: 0;
     text-align: center;
   }
   #products ul {
-    top: 50px;
+    top: 86px;
   }
 }
 
@@ -556,14 +576,26 @@ footer div {
     font-size: 22px;
     margin: 5px;
   }
-  #cbdlineresearch p {
-    padding: 0 20px;
+  #cbdworks h2, #cbdfast h2, #aboutus h2, #cbdbenefits h2, #cbdsideeffects h2 {
+    font-size: 22px;
+  }
+  #cbdlineresearch p, #cbdworks p, #cbdfast p, #evolve p, #aboutus p, #cbdsideeffects p {
+    padding: 0 10px;
     text-align: justify;
     font-size: 16px;
   }
+  #cbdbenefits li {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer div p {
+    font-size: 10px;
+  }
   #proven ul {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     list-style-type: none;
   }
@@ -573,6 +605,12 @@ footer div {
   nav a {
     font-size: 12px;
   }
+
+  #burgernav {
+    display: block;
+
+  }
+
   #aboutuspic {
     display: none;
   }
@@ -587,6 +625,9 @@ footer div {
   }
   #centerpic {
     padding: 10px;
+  }
+  nav {
+    display: none;
   }
   .nav-wrapper {
     display: block;

@@ -14,6 +14,30 @@ $('#checkBox3').on('click', function() {
   }
 });
 
+$('#burgernav').hide();
+
+
+$('.hamburger').on('click', function() {
+  $('#burgernav ul').css('text-align', 'left');
+  $('#burgernav ul').css('padding-left', '0px');
+  $('#burgernav ul').css('list-style-type', 'none');
+  $('.fa').toggleClass('rotateburger');
+  // $('#burgernav').show();
+  $('#burgernav').slideToggle('fast');
+});
+
+$('#burgerlist').on('click', function() {
+  $('#burgernav').hide();
+  $('.fa').removeClass('rotateburger');
+});
+
+$(window).resize(function(){
+  $('#burgernav').hide();
+    // $('.hamburger').hide();
+  $('.fa').removeClass('rotateburger');
+  // $('.hamburger').show();
+});
+
 $('a[href*="#"]').on('click', function(event) {
   // On-page links
   if (
@@ -25,7 +49,7 @@ $('a[href*="#"]').on('click', function(event) {
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     // Does a scroll target exist?
     console.log('[name=' + this.hash.slice(1) + ']');
-    var name1 = this.hash.slice(1);
+
     // $('#wellcapsules').addClass('rotatewellcapsules');
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
@@ -44,7 +68,7 @@ $('a[href*="#"]').on('click', function(event) {
           $('html, body').animate({
             scrollTop: target.offset().top - 90
           }, 800);
-      };
+      }
     }
   }
 });
@@ -71,13 +95,24 @@ $('#focusanchor').on('click', function() {
 
 $('#wellanchor').on('click', function() {
   setTimeout(function() {
-  $('#welldrops').toggleClass('rotateproduct');
-  $('#wellcapsules').toggleClass('rotateproduct');
-    }, 500);
+    $('#welldrops').toggleClass('rotateproduct');
+    $('#wellcapsules').toggleClass('rotateproduct');
+  }, 500);
 });
 
 $('#healanchor').on('click', function() {
-    setTimeout(function() {
-  $('#healcream').toggleClass('rotateproduct');
-    }, 500);
+  setTimeout(function() {
+    $('#healcream').toggleClass('rotateproduct');
+  }, 500);
 });
+
+// $(window).resize(function(){
+//
+//        if ($('#check2').css("display") == "none"){
+//               $('nav').css('background-color', 'red');
+//                console.log("<div>" + $( window ).width() + "</div>" );
+//             } else {
+//                    $('nav').css('background-color', 'white');
+//                     console.log( "<div>" + $( window ).width() + "</div>" );
+//                  }
+// });

@@ -519,14 +519,19 @@ footer div {
   transform: rotateY(360deg);
   }
 
+  .rotateburger {
+    transition: .2s linear;
+    transform: rotate(90deg);
+    }
+
 #burgernav {
   display: none;
 }
 
-.displayburger {
-  display:block;
-  text-align: left;
+#burgernavon {
+  display: block;
 }
+
 @media screen and (max-width: 1120px) {
   #centerpic, #prefooterpic, #img2, #img1, #img5, #img6 {
     display: none;
@@ -603,13 +608,9 @@ footer div {
 
 @media screen and (max-width: 820px) {
   nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
-  #burgernav {
-    display: block;
-
-  }
 
   #aboutuspic {
     display: none;
@@ -631,14 +632,39 @@ footer div {
   }
   .nav-wrapper {
     display: block;
+    /*padding: 10px;*/
     position: sticky;
     top: 0px;
     z-index: 20;
     background-color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 10px;
   }
   #burgernav {
-    display: none;
+    display: flex;
+    position: sticky;
+    top: 80px;
+    /*opacity: 0;*/
+    background-color: #48a500;
+    margin-right: 70%;
+    /*opacity: .8;*/
   }
+
+  #burgernav ul {
+    text-align: left;
+    /*padding-left: 10px;*/
+    list-style-type: none;
+
+  }
+
+  #burgernav a {
+  padding-left: 10px;
+  margin-top: 0;
+  color: white;
+
+}
+
   .banner1 {
     display: grid;
     text-align: center;
@@ -679,12 +705,12 @@ footer div {
     grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 10px;
-    background-color: #5BC8AF;
+
     transition: all .7s ease-in-out;
     max-height: 100%;
     margin: 0 auto;
     max-width: 1260px;
-    background-color: white;
+
   }
   #cbdlineresearch {
     display: grid;
@@ -808,7 +834,7 @@ footer div {
   }
   body {
     min-width: 360px;
-    padding: 10px;
+    /*padding: 10px;*/
     text-align: justify;
   }
 }

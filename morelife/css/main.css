@@ -634,12 +634,15 @@ footer div {
     display: block;
     /*padding: 10px;*/
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 20;
     background-color: white;
     font-size: 16px;
     margin: 0;
     padding: 10px 10px;
+  }
+  .fa {
+    margin: 10px 0;
   }
   #burgernav {
     display: flex;
@@ -824,8 +827,13 @@ footer div {
 
 @media screen and (max-width: 500px) {
   #products a {
-    display: none;
-  }
+    font-size: 16px;
+    padding: 0;
+}
+
+#products ul {
+  padding:0;
+}
   #cbdlineresearch {
     grid-template-rows: 360px;
   }

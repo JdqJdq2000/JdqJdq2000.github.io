@@ -32,7 +32,7 @@ a {
 
 header {
   padding: 100px;
-  background-image: url('../img/pexels-photo-531765.jpeg');
+  background-image: url('../img/fieldgreen.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -102,11 +102,16 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60px;
   background-color: #9cff00;
-  align-items: flex-end;
-  padding: 0px 10px;
+  /*align-items: flex-end;*/
+  padding: 5px 0 5px 5px;
   transition: all .4s ease-in-out;
 }
 
+.banner2 img {
+  width: 65px;
+  height: 65px;
+
+}
 #b2rightcontent {
   text-align: right;
 }
@@ -315,14 +320,14 @@ button {
 #check1 {
   text-align: right;
   margin: 0 auto;
-  padding: 45px 80px 20px 0;
+  padding: 50px 80px 10px 0;
   transform: scale(1.5);
 }
 
 #centerpic {
   margin: 20px 0;
-  padding: 90px 10px;
-  background-image: url('../img/waterfall.jpg');
+  padding: 50px 10px;
+  background-image: url('../img/vinehandshake.jpg');
   background-size: cover;
   overflow: hidden;
   background-position: center;
@@ -395,14 +400,14 @@ button {
 #check2 {
   text-align: right;
   margin: 0 auto;
-  padding: 45px 215px 20px 0;
+  padding: 0px 215px 0px 0;
   transform: scale(1.5);
 }
 
 #aboutuspic {
   margin: 20px 0;
   padding: 150px 10px;
-  background-image: url('../img/waterfall.jpg');
+  background-image: url('../img/laboratorypipette.jpg');
   background-size: cover;
   overflow: hidden;
   background-position: center;
@@ -479,21 +484,21 @@ button {
 #check3 {
   text-align: right;
   margin: 0 auto;
-  padding: 440px 80px 100px 0;
+  padding: 280px 80px 0 0;
   transform: scale(1.5);
 }
 
 #prefooterpic {
   margin: 20px 0 0 0;
-  padding: 150px 10px;
-  background-image: url('../img/waterfall.jpg');
-  background-size: cover;
-  overflow: hidden;
-  background-position: center;
-  color: white;
-  font-size: 22px;
-  text-align: center;
-  height: auto;
+  padding: 0;
+  /*background-image: url('../img/waterfall.jpg');*/
+  /*background-size:  auto;*/
+  /*overflow:   scroll;*/
+  /*background-position: bottom;*/
+  /*color: white;*/
+  /*font-size: 22px;*/
+  /*text-align: ;*/
+  /*height: 100%;*/
 }
 
 footer {
@@ -731,7 +736,7 @@ footer div {
   }
   header {
     padding: 100px 50px;
-    background-image: url('../img/pexels-photo-531765.jpeg');
+    background-image: url('../img/fieldgreen.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

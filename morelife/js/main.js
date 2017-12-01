@@ -23,7 +23,7 @@ $('.hamburger').on('click', function() {
   $('#burgernav ul').css('list-style-type', 'none');
   $('.fa').toggleClass('rotateburger');
   // $('#burgernav').show();
-  $('#burgernav').slideToggle('fast');
+  $('#burgernav').fadeToggle(1000);
 });
 
 $('#burgerlist').on('click', function() {

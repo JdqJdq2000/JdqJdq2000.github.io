@@ -4,12 +4,14 @@ Base styles:
 
 * {
   box-sizing: border-box;
+
 }
 
 /* Fix for responsive images */
 
 img {
   max-width: 100%;
+
 }
 
 /********** Main Body styles **********/
@@ -90,7 +92,7 @@ h2 {
 }
 
 .banner1 h3:hover {
-  transform: scale(1.02, 1.02);
+  transform: scale(.95);
   color: #ff0dff;
 }
 
@@ -128,10 +130,12 @@ h2 {
   font-size: 20px;
   margin: 10px 0;
   padding: 10px;
+  transition: all .4s ease-in-out;
 }
 
 #logo1 img:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(360deg) scale(2);
+
 }
 
 nav {
@@ -204,13 +208,15 @@ nav a:hover {
 .productwrapper img {
   opacity: 1;
   transition: all .3s ease-in-out;
+  justify-content: center;
 }
 
 .productwrapper img:hover {
-  opacity: 0.5;
-  border-width: 2px;
-  border-color: inherit;
-  /*transform:rotateX(360deg);*/
+  /*opacity: 0.8;*/
+  /*border-width: 2px;
+  /*border-color: inherit;*/
+  transform:  scaleY(.95);
+  /*transform: scale(1.2);*/
 }
 
 section h1 {
@@ -520,12 +526,12 @@ footer div {
 }
 
 .rotateproduct {
-  transition: .2s linear;
+  transition: .3s linear;
   transform: rotateY(360deg);
   }
 
   .rotateburger {
-    transition: .2s linear;
+    transition: .5s linear;
     transform: rotate(90deg);
     }
 
@@ -539,9 +545,14 @@ footer div {
 
 @media screen and (max-width: 1120px) {
   #centerpic, #prefooterpic, #img2, #img1, #img5, #img6 {
-    display: none;
+      transition: all 1s ease-in-out;
+      opacity: 0;
+      display: none;
   }
   #check1, #check3 {
+      transition: all .5s ease-in-out;
+    opacity: 0;
+    animation-delay: 2s;
     display: none;
   }
   #check2 {

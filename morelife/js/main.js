@@ -1,3 +1,5 @@
+// When you click on the checkbox 1 2 or 3 the picture will collapse
+
 $('#checkBox1').on('click', function() {
   $('#centerpic').fadeToggle(400);
 });
@@ -14,38 +16,63 @@ $('#checkBox3').on('click', function() {
   }
 });
 
+// Hide the hamburger nav for now
 $('#burgernav').hide();
 
-
+// If you click on the hamburger nav bring out the menu.  if the product zoom is engaged it will close.
 $('.hamburger').on('click', function() {
   $('.restzoomprod').removeClass('zoomproductgo');
+  $('.relaxzoomprod').removeClass('zoomproductgo');
+  $('.focuszoomprod').removeClass('zoomproductgo');
+  $('.welldropszoomprod').removeClass('zoomproductgo');
+  $('.wellcapszoomprod').removeClass('zoomproductgo');
+  $('.healzoomprod').removeClass('zoomproductgo');
   $('#burgernav ul').css('text-align', 'left');
   $('#burgernav ul').css('padding-left', '0px');
   $('#burgernav ul').css('list-style-type', 'none');
   $('.fa').toggleClass('rotateburger');
-  // $('#burgernav').show();
-  $('#burgernav').fadeToggle(1000);
-  $('.restzoomprod').removeClass('zoomproductgo');
+  $('#burgernav').fadeToggle(100);
+
 });
 
+// If a menu item is chosen, close the hamburger list
 $('#burgerlist').on('click', function() {
   $('#burgernav').hide();
   $('.restzoomprod').removeClass('zoomproductgo');
+  $('.relaxzoomprod').removeClass('zoomproductgo');
+  $('.focuszoomprod').removeClass('zoomproductgo');
+  $('.welldropszoomprod').removeClass('zoomproductgo');
+  $('.wellcapszoomprod').removeClass('zoomproductgo');
+  $('.healzoomprod').removeClass('zoomproductgo');
   $('.fa').removeClass('rotateburger');
 });
 
+// If the window is resized do some checks and clear out zooms
 $(window).resize(function() {
+  // Hide any zoomed out product
+  // $('.restzoomprod').removeClass('zoomproductgo');
+  // $('.relaxzoomprod').removeClass('zoomproductgo');
+  // $('.focuszoomprod').removeClass('zoomproductgo');
+  // $('.welldropszoomprod').removeClass('zoomproductgo');
+  // $('.wellcapszoomprod').removeClass('zoomproductgo');
+  // $('.healzoomprod').removeClass('zoomproductgo');
+  // Hide the hamburger list
   $('#burgernav').hide();
-  $('.restzoomprod').removeClass('zoomproductgo');
-
   // $('.hamburger').hide();
   $('.fa').removeClass('rotateburger');
   // $('.hamburger').show();
 });
-// Smooth scrolling
+
+// Smooth scrolling if you click on any anchor
 $('a[href*="#"]').on('click', function(event) {
   // On-page links
+  // Close zoomed product on any click
   $('.restzoomprod').removeClass('zoomproductgo');
+  $('.relaxzoomprod').removeClass('zoomproductgo');
+  $('.focuszoomprod').removeClass('zoomproductgo');
+  $('.welldropszoomprod').removeClass('zoomproductgo');
+  $('.wellcapszoomprod').removeClass('zoomproductgo');
+  $('.healzoomprod').removeClass('zoomproductgo');
 
   if (
     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
@@ -81,37 +108,87 @@ $('a[href*="#"]').on('click', function(event) {
 });
 
 // Spin products and zoom
-$('#restanchor').on('click', function() {
 
+// REST Spin ===================================
+$('#restanchor').on('click', function() {
   setTimeout(function() {
     $('#restspray').toggleClass('rotateproduct');
   }, 500);
 });
 
+// REST Zoom modal triggered
 $('#restspray, #restspray2').on('click', function() {
   setTimeout(function() {
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').removeClass('zoomproductgo');
     $('.restzoomprod').addClass('zoomproductgo');
   }, 100);
 });
 
+//REST zoom close button hit
 $('#restclose').on('click', function() {
   setTimeout(function() {
     $('.restzoomprod').removeClass('zoomproductgo');
   }, 100);
 });
 
+// RELAX Spin ===================================
 $('#relaxanchor').on('click', function() {
   setTimeout(function() {
     $('#relaxspray').toggleClass('rotateproduct');
   }, 500);
 });
 
+// RELAX Zoom modal triggered
+$('#relaxspray, #relaxpray2').on('click', function() {
+  setTimeout(function() {
+    $('.restzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').removeClass('zoomproductgo');
+    $('.relaxzoomprod').addClass('zoomproductgo');
+  }, 100);
+});
+
+//RELAX zoom close button hit
+$('#relaxclose').on('click', function() {
+  setTimeout(function() {
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+  }, 100);
+});
+
+// FOCUS Spin ===================================
 $('#focusanchor').on('click', function() {
   setTimeout(function() {
     $('#focusspray').toggleClass('rotateproduct');
   }, 500);
 });
 
+// FOCUS Zoom modal triggered
+$('#focusspray, #focusspray2').on('click', function() {
+  setTimeout(function() {
+    $('.restzoomprod').removeClass('zoomproductgo');
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').addClass('zoomproductgo');
+  }, 100);
+});
+
+//FOCUS zoom close button hit
+$('#focusclose').on('click', function() {
+  setTimeout(function() {
+    $('.focuszoomprod').removeClass('zoomproductgo');
+  }, 100);
+});
+
+// Spring two products
+// WELL Spins ===================================
 $('#wellanchor').on('click', function() {
   setTimeout(function() {
     $('#welldrops').toggleClass('rotateproduct');
@@ -119,23 +196,77 @@ $('#wellanchor').on('click', function() {
   }, 500);
 });
 
+// WELL Drops Zoom modal triggered
+$('#welldrops, #welldrops2').on('click', function() {
+  setTimeout(function() {
+    $('.restzoomprod').removeClass('zoomproductgo');
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').addClass('zoomproductgo');
+  }, 100);
+});
+
+//WELL Drops zoom close button hit
+$('#welldropsclose').on('click', function() {
+  setTimeout(function() {
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+  }, 100);
+});
+
+// WELL Capsules Zoom modal triggered
+$('#wellcapsules, #wellcapsules2').on('click', function() {
+  setTimeout(function() {
+    $('.restzoomprod').removeClass('zoomproductgo');
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').addClass('zoomproductgo');
+  }, 100);
+});
+
+//WELL Capsules zoom close button hit
+$('#wellcapsclose').on('click', function() {
+  setTimeout(function() {
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+  }, 100);
+});
+
+// HEAL Spin ===================================
 $('#healanchor').on('click', function() {
   setTimeout(function() {
     $('#healcream').toggleClass('rotateproduct');
   }, 500);
 });
 
-// $(window).resize(function(){
-//
-//        if ($('#check2').css("display") == "none"){
-//               $('nav').css('background-color', 'red');
-//                console.log("<div>" + $( window ).width() + "</div>" );
-//             } else {
-//                    $('nav').css('background-color', 'white');
-//                     console.log( "<div>" + $( window ).width() + "</div>" );
-//                  }
-// });
+// Heal Cream Zoom modal triggered
+$('#healcream, #healcream2').on('click', function() {
+  setTimeout(function() {
+    $('.restzoomprod').removeClass('zoomproductgo');
+    $('.relaxzoomprod').removeClass('zoomproductgo');
+    $('.focuszoomprod').removeClass('zoomproductgo');
+    $('.welldropszoomprod').removeClass('zoomproductgo');
+    $('.wellcapszoomprod').removeClass('zoomproductgo');
+    $('.healzoomprod').addClass('zoomproductgo');
+  }, 100);
+});
 
+//WEAL Cream zoom close button hit
+$('#healcreamclose').on('click', function() {
+  setTimeout(function() {
+    $('.healzoomprod').removeClass('zoomproductgo');
+  }, 100);
+});
+
+// On scroll do some cleanup
 $(window).on('scroll', function() {
   $('.restzoomprod').removeClass('zoomproductgo');
+  $('.relaxzoomprod').removeClass('zoomproductgo');
+  $('.focuszoomprod').removeClass('zoomproductgo');
+  $('.welldropszoomprod').removeClass('zoomproductgo');
+  $('.wellcapszoomprod').removeClass('zoomproductgo');
+  $('.healzoomprod').removeClass('zoomproductgo');
+  $('.fa').removeClass('rotateburger');
 });

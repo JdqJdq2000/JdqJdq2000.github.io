@@ -1,117 +1,249 @@
+/*===========================MAX WIDTH 1120px===============================*/
 @media screen and (max-width: 1120px) {
-  #img2, #img1 {
+
+  /*Fade out some images*/
+  #centerpic, #prefooterpic, #img2, #img1, #img5, #img6 {
+    transition: all 1s ease-in-out;
+    opacity: 0;
     display: none;
   }
+  /*Hide images on box click*/
+  #check1, #check3 {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    animation-delay: 2s;
+    display: none;
+  }
+
+  /*Adjust third image*/
+  #check2 {
+    text-align: right;
+    margin: 0 auto;
+    padding: 45px 170px 20px 0;
+    transform: scale(1.5);
+  }
+
+  /*Adjust footer*/
+  footer {
+    margin-top: 20px;
+  }
+
+  /*Collapse columns for nav*/
   nav {
     grid-template-columns: 100%;
     grid-template-rows: 0;
     text-align: center;
   }
+
+  /*Adjust products top of page*/
   #products ul {
-    top: 50px;
+    top: 86px;
   }
 }
 
-@media screen and (max-width: 930px) {
+/*===========================MAX WIDTH 925px===============================*/
+@media screen and (max-width: 935px) {
+/*Shrink nav font size*/
   nav a {
     font-size: 14px;
   }
+
+  /*Remove logo circle*/
   #logo1 img {
     display: none;
   }
+  /*At this point just center the nav*/
   nav {
     text-align: center;
   }
+
   #products a {
     display: inline-block;
     font-size: 32px;
   }
-}
 
-@media screen and (max-width: 800px) {
-  nav a {
+/*Shrink headers and other text*/
+  #evolve h2 {
+    padding: 0 40px;
+    font-size: 22px;
+    margin: 5px;
+  }
+
+  #proven h2 {
+    font-size: 22px;
+    margin: 5px;
+  }
+  #cbdworks h2, #cbdfast h2, #aboutus h2, #cbdbenefits h2, #cbdsideeffects h2 {
+    font-size: 22px;
+  }
+  #cbdlineresearch p, #cbdworks p, #cbdfast p, #evolve p, #aboutus p, #cbdsideeffects p {
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 16px;
+  }
+  #cbdbenefits li {
+    font-size: 16px;
+  }
+  footer {
     font-size: 12px;
+  }
+  footer div p {
+    font-size: 10px;
+  }
+  #proven ul {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: none;
   }
 }
 
-@media screen and (max-width: 730px) {
+/*===========================MAX WIDTH 820px===============================*/
+@media screen and (max-width: 820px) {
+
+/*Shrink fonts further*/
+  nav a {
+    font-size: 14px;
+  }
+
+  /*Remove about us pic*/
+  #aboutuspic {
+    display: none;
+  }
+
+  /*Remove last check box that allows for picture collapse*/
+  #check2 {
+    display: none;
+  }
+}
+
+/*===========================MAX WIDTH 740px===============================*/
+@media screen and (max-width: 740px) {
+
+/*Lets keep the browser window from shrinking too much*/
   body {
     min-width: 250px;
   }
-  .nav-wrapper {
-    display: block;
-    position: sticky;
-    top: 0px;
-    z-index: 20;
-    background-color: white;
+
+  #centerpic {
+    padding: 10px;
   }
-  #burgernav {
+
+  /*Time for the hamburger menu!*/
+  nav {
     display: none;
   }
+
+  .nav-wrapper {
+    display: block;
+    /*padding: 10px;*/
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 10px;
+  }
+
+  .fa {
+    margin: 10px 0;
+  }
+
+  #burgernav {
+    display: flex;
+    position: sticky;
+    top: 80px;
+    /*opacity: 0;*/
+    background-color: #48a500;
+    margin-right: 70%;
+    /*opacity: .8;*/
+  }
+  #burgernav ul {
+    text-align: left;
+    /*padding-left: 10px;*/
+    list-style-type: none;
+  }
+  #burgernav a {
+    padding-left: 10px;
+    margin-top: 0;
+    color: white;
+  }
+
   .banner1 {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
   }
+
   .banner1 h3 {
     font-size: 12px;
   }
+/*Lets remove banner 2 layer*/
   .banner2 {
     display: none;
   }
+
+/*Remove the main nav*/
   #mainnav {
     display: none;
   }
+
+  /*Adjust fonts*/
   h1 {
     font-size: 42px;
     letter-spacing: 2px;
     text-align: center;
   }
+
   h2 {
     text-align: center;
     font-size: 18px;
     letter-spacing: 2px;
   }
+
   #proven h2 {
     margin: 0px;
-    padding-top: 70px;
+    padding-top: 10px;
   }
+
   #proven ul {
-    padding-top: 20px;
+    padding: 20px;
     margin: 0;
   }
   h3 {
     font-size: 14px
   }
+
   .productwrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 10px;
-    background-color: #5BC8AF;
     transition: all .7s ease-in-out;
     max-height: 100%;
     margin: 0 auto;
     max-width: 1260px;
-    background-color: white;
   }
+
   #cbdlineresearch {
     display: grid;
     text-align: left;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 220px;
     border-top: solid;
     border-bottom: none;
     grid-gap: 20px;
-    padding: 0px 20px 50px 20px;
+    padding: 0px 20px 20px 20px;
     transition: all .4s ease-in-out;
     /*width: 0 100%;*/
     height: 100%;
     border-top: 0;
   }
+
   header {
     padding: 100px 50px;
-    background-image: url('../img/pexels-photo-531765.jpeg');
+    background-image: url('../img/fieldgreen.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -123,30 +255,120 @@
     padding: 0 4px;
     transition: all .3s ease-in-out;
   }
+  #products {
+    padding-bottom: 5px;
+  }
+
+/*clean up (remove) logos pics and lines*/
   #logo1 img {
     display: none;
   }
+
   #img2, #img1 {
     display: none;
   }
+
   #evolve {
     border-right: none;
   }
+
   #proven {
     border-left: none;
   }
+
   #products ul {
     text-align: center;
     position: sticky;
-    top: 40px;
+    top: 57px;
+  }
+
+  #benefits {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    border: none;
+    border-top-width: 2px;
+    padding: 0px 10px 10px 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    background-color: white;
+  }
+
+  #cbdbenefits {
+    border-right: none;
+    border-right-width: 1px;
+  }
+
+  #cbdsideeffects {
+    border-left: none;
+    border-left-width: 1px;
+  }
+
+  #howfast {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: 1fr;
+    border-bottom: none;
+    border-bottom-width: 2px;
+    padding: 10px 10px 0 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    background-color: white;
+  }
+
+  #cbdworks {
+    border-right: none;
+    border-right-width: 1px;
+  }
+
+  #cbdfast {
+    border-left: none;
+    border-left-width: 1px;
+  }
+
+  footer {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr;
+    padding: 10px 10px 0 10px;
+    grid-gap: 0px;
+    transition: all .7s ease-in-out;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    align-items: flex-end;
+  }
+
+  footer div {
+    padding: 20px;
   }
 }
 
+/*===========================MAX WIDTH 500px===============================*/
 @media screen and (max-width: 500px) {
   #products a {
-    display: none;
+    font-size: 16px;
+    padding: 0;
+  }
+  #products ul {
+    padding: 0;
+  }
+  #cbdlineresearch {
+    grid-template-rows: 360px;
   }
   header {
-    padding: 5px;
+    padding: 2px;
+  }
+  body {
+    min-width: 360px;
+    /*padding: 10px;*/
+    text-align: justify;
   }
 }

@@ -20,8 +20,9 @@
   <!--  Style sheets -->
   <link rel="stylesheet" href="css/normalize.css">
 
-  <link rel="stylesheet" href="css/main.css">
 
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/_atmedia.css">
 
   <!-- HEAD END -->
 </head>
@@ -33,7 +34,7 @@
   </div>
 
   <!-- Banner#1 - all pages -->
-  <a href="#">
+  <a href="#top">
     <div class="banner1">
       <h3>Learn about how CBD can help you...</h3>
       <div></div>
@@ -41,7 +42,7 @@
     </div>
   </a>
   <!-- Banner#2 - all pages -->
-  <a href="#">
+  <a href="#top">
     <div class="banner2">
       <!-- <img src="img/leafgreen.jpg" alt="More Life Logo"> -->
       <!-- <div id="b2centercontent"><img src="img/morelifegreenbluetext.png " alt="morelife greenblue text png logo"></div> -->
@@ -77,7 +78,7 @@
       <a href="#cbdlineresearch">Benefits</a>
       <a href="#howfast">How CBD Works</a>
       <a href="#aboutus">About Us</a>
-      <a href="#">FAQ</a>
+      <a href="#top">FAQ</a>
       <a href="#contactus">Help Center</a>
     </ul>
   </nav>
@@ -102,26 +103,28 @@
       </div>
       <div>
         <img id="relaxspray" src="img/pumpgreen.jpg" alt="RELAX spray">
-        <button type="button">MORE LIFE's Relax spray treats a variety of anxiety related disorders, including panic attacks, OCD, Social phobia, PTSD, general anxiety and mild to moderate depression.</button>
+        <button type="button"  id="relaxpray2" >MORE LIFE's Relax spray treats a variety of anxiety related disorders, including panic attacks, OCD, Social phobia, PTSD, general anxiety and mild to moderate depression.</button>
       </div>
       <div>
         <img id="focusspray" src="img/longcappedgreen.jpg" alt="FOCUS spray">
-        <button type="button">MORE LIFE's FOCUS provides a kick with B-12, Ginseng and Guarana infusions, to help arrive at optimum energy levels quickly, maintain endurance, mental focus along with aiding as a lactic acid buffer to prevent soreness and muscle fatigue.</button>
+        <button type="button" id="focusspray2">MORE LIFE's FOCUS provides a kick with B-12, Ginseng and Guarana infusions, to help arrive at optimum energy levels quickly, maintain endurance, mental focus along with aiding as a lactic acid buffer to prevent soreness and muscle fatigue.</button>
       </div>
       <div>
         <img id="welldrops" src="img/droppergreen.jpg" alt="WELL drops">
-        <button type="button">MORE LIFE's WELL drops are a powerhouse recipe packed with 750mg of pure CBD. Our formula contains 500+mg cannabinoids providing 15mg of cannabinoids Per Serving.</button>
+        <button type="button" id="welldrops2">MORE LIFE's WELL drops are a powerhouse recipe packed with 750mg of pure CBD. Our formula contains 500+mg cannabinoids providing 15mg of cannabinoids Per Serving.</button>
       </div>
       <div>
         <img id="wellcapsules" src="img/capsulesgreen.jpg" alt="WELL capsules">
-        <button type="button">MORE LIFE's WELL CBD Oil Capsules contains Full Spectrum CBD Hemp Oil and natural Hemp Extract. Each serving of one capsules contains 25% phytocannabinoids Rich Full Spectrum Hemp oil, which includes CBD and may include CBG, CBGA, CBN, CBNA, CBC, CBCA, THCV, CBDA and CBLA.</button>
+        <button type="button" id="wellcapsules2">MORE LIFE's WELL CBD Oil Capsules contains Full Spectrum CBD Hemp Oil and natural Hemp Extract. Each serving of one capsules contains 25% phytocannabinoids Rich Full Spectrum Hemp oil, which includes CBD and may include CBG, CBGA, CBN, CBNA, CBC, CBCA, THCV, CBDA and CBLA.</button>
       </div>
       <div>
         <img id="healcream" src="img/creamgreen.jpg" alt="HEAL cream">
-        <button type="button">MORE LIFE's Heal cream is the answer for muscle aches, rheumatoid arthritis, and many other joint pains. Our unique formulation offers deep skin penetration to help balance the body and ease sore muscles, inflammation, swelling and bruising, helping muscles to relax and recover naturally.</button>
+        <button type="button" id="healcream2">MORE LIFE's Heal cream is the answer for muscle aches, rheumatoid arthritis, and many other joint pains. Our unique formulation offers deep skin penetration to help balance the body and ease sore muscles, inflammation, swelling and bruising, helping muscles to relax and recover naturally.</button>
       </div>
     </div>
   </section>
+
+  <!-- REST Modal window -->
   <div class=restzoomprod>
     <div class="restcontent">
       <h3>REST Oil</h3>
@@ -129,6 +132,54 @@
       <button id="restclose">Close</button>
     </div>
   </div>
+
+  <!-- RELAX Modal window -->
+  <div class=relaxzoomprod>
+    <div class="relaxcontent">
+      <h3>RELAX Spray</h3>
+      <p>MORE LIFE's Relax spray treats a variety of anxiety related disorders, including panic attacks, OCD, Social phobia, PTSD, general anxiety and mild to moderate depression.</p>
+      <button id="relaxclose">Close</button>
+    </div>
+  </div>
+
+  <!-- FOCUS Modal window -->
+  <div class=focuszoomprod>
+    <div class="focuscontent">
+      <h3>FOCUS Oil</h3>
+      <p>MORE LIFE's FOCUS provides a kick with B-12, Ginseng and Guarana infusions, to help arrive at optimum energy levels quickly, maintain endurance, mental focus along with aiding as a lactic acid buffer to prevent soreness and muscle fatigue.</p>
+      <button id="focusclose">Close</button>
+    </div>
+  </div>
+
+  <!-- WELL Drops Modal window -->
+  <div class=welldropszoomprod>
+    <div class="welldropscontent">
+      <h3>WELL Drops</h3>
+      <p>MORE LIFE's WELL drops are a powerhouse recipe packed with 750mg of pure CBD. Our formula contains 500+mg cannabinoids providing 15mg of cannabinoids Per Serving.</p>
+      <button id="welldropsclose">Close</button>
+    </div>
+  </div>
+
+  <!-- WELL Capsules Modal window -->
+  <div class=wellcapszoomprod>
+    <div class="wellcapscontent">
+      <h3>WELL Capsules</h3>
+      <p>MORE LIFE's WELL CBD Oil Capsules contains Full Spectrum CBD Hemp Oil and natural Hemp Extract. Each serving of one capsules contains 25% phytocannabinoids Rich Full Spectrum Hemp oil, which includes CBD and may include CBG, CBGA, CBN, CBNA, CBC,
+        CBCA, THCV, CBDA and CBLA.</p>
+      <button id="wellcapsclose">Close</button>
+    </div>
+  </div>
+
+  <!-- HEAL Cream Modal window -->
+  <div class=healzoomprod>
+    <div class="healcontent">
+      <h3>HEAL Cream</h3>
+      <p>MORE LIFE's Heal cream is the answer for muscle aches, rheumatoid arthritis, and many other joint pains. Our unique formulation offers deep skin penetration to help balance the body and ease sore muscles, inflammation, swelling and bruising, helping
+        muscles to relax and recover naturally.</p>
+      <button id="healcreamclose">Close</button>
+    </div>
+  </div>
+
 
   <!-- Section 2 - Evolve CBD Line, Proven Researched Effects of CBD -->
   <section id="cbdlineresearch">
@@ -243,7 +294,7 @@
         <li><a href="#cbdlineresearch ">Benefits</a></li>
         <li><a href="#howitworks ">How CBD Works</a></li>
         <li><a href="#aboutus ">About Us</a></li>
-        <li><a href="# ">FAQ</a></li>
+        <li><a href="#top ">FAQ</a></li>
         <li><a href="#contactus ">Help Center</a></li>
       </ul>
     </div>
